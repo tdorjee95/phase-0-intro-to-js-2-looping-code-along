@@ -1,18 +1,23 @@
-const names = ["Charlie", "Samip", "Ali"];
+const names = ['Guadalupe', 'Ollie', 'Aki'];
 
-function writeCards(names) {
-  const thankYouMessages = [];
-
-
-  for (let i = 0; i < names.length; i++) {
-    const message = `Thank you, ${names[i]}, for the wonderful birthday gift!`;
-    thankYouMessages.push(message);
-  
-  
+function writeCards(){
+  let thankyouCards = [];
+  let i= 0;
+  while (i <names.length){
+   thankyouCards.push  (`Thank you, ${names[i]}, for the wonderful surprise gift!`);
+    i++;
   }
 
-  return thankYouMessages;
+  return thankyouCards;
+
 }
 
-const messages = writeCards(names);
-console.log(messages);
+
+writeCards(names);
+
+function countDown(){
+ let countDown = 0;
+ while (countDown < 11) {
+  console.log(countDown++);
+ }
+}
